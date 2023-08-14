@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="details.css">
+    
+</head>
+<body>
+    <nav c>
+        <ul class="un">
+      <li class="list"><a href="tickets.html">TICKETS</a></li>
+        <li class="list"><a href="details.html">DETAILS</a></li>
+            <li class="list">  <a href="payment.html">PAYMENT</a></li>
+                <li class="list"> <a href="Confirm.html">CONFIRMATION</a></li>
+
+                </ul>
+    </nav>
+    <header class="head">
+        
+        <button class="button" onclick="confirm('Are you sure?')" >  <a href="tickets.html"> BACK</a>  </button>
+
+        <h1 class="tickets" > BUY TICKETS </h1>
+    </header>
+        
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+<div class="containerS">
+<center>
+    <form id="phone-form"onsubmit="return validateForm()">
+
+        <div class="side">
+
+            <div class="down">
+
+                <h2 class="caption">Details</h2>
+
+                <div class="enter">
+                    <span>Full name :</span>
+                    <input type="text" placeholder="jane ella" required>
+                </div>
+                <div class="enter">
+                    <span>Email :</span>
+                    <input type="email" placeholder="example@example.com"required>
+                </div>
+                <div class="enter">
+                    <span>Confirm Email :</span>
+                    <input type="text" placeholder="example@example.com" required>
+                </div>
+                <div class="enter">
+                    <span> Mobile Number :</span>
+                    <!-- <input type="text" name="phone" require placeholder="770 000 0000" required> -->
+                    <input type="tel"  placeholder="770 000 0000">
+                </div>
+                <button class="payment"><a href="payment.html">Proceed</button></a>
+         
+                
+        
+                 </form> 
+                </center>
+            </div>
+        </form>
+    
+        <!-- <div class="summary-table"> -->
+          
+          <table id="summary-table" >
+            <td colspan="2"></td>
+            <td id="summary-name"></td>
+            </tr>
+            <td colspan="2"></td>
+            <td id="summary-mail"></td>
+            </tr>
+            <td colspan="2"></td>
+            <td id="summary-gender"></td>
+            </tr>
+            <td colspan="2"></td>
+            <td id="summary-telephone"></td>
+            </tr>
+    <tr>
+    <tr>
+    <tr>
+        <tr>
+              <tr>
+                <td></td>
+                  <td id="summary-date">-</td>
+              </tr>
+              <tr>
+                  <td></td>
+                  <td id="summary-time">-</td>
+              </tr>
+              <tr>
+                  <td></td>
+                  <td id="summary-duration">-</td>
+              </tr>
+              <tr>
+                  <td></td>
+                  <td id="summary-tickets">-</td>
+              </tr>
+              <tr>
+                  <td>  </td>
+                  <td id="summary-total">-</td>
+              </tr>
+          </table>
+ 
+<script src="details.js"></script>
+          
+<footer>
+    <div class="footer-content">
+        <p>&copy;  All rights reserved.</p>
+    </div>
+</footer>
+     
+    
+</body>
+</html>
